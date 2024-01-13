@@ -2,12 +2,12 @@ import os
 
 def getSemester():
     semesterInput = input("Please enter the semester (whitespace will be stripped)\n")
-    return semesterInput.replace(" ", "")
+    return semesterInput.replace(" ", "") #didn't use .strip() because it only removed first and last whitespace
 
 def getClasses():
     classString = input("Enter your classes, seperated by commas (whitespace will be stripped)\n")
     strippedString = classString.replace(" ", "")
-    return strippedString.split(',')
+    return strippedString.split(',') #didn't use .strip() because it only removed first and last whitespace
 
 def createSubfolders():
    subfolderList = ["assignments", "notes", "slides-resources"] #list of subfolders to be created
