@@ -1,7 +1,8 @@
 import os
 
 def getSemester():
-    return input("Please enter the semester\n")
+    semesterInput = input("Please enter the semester (whitespace will be stripped)\n")
+    return semesterInput.replace(" ", "")
 
 def getClasses():
     classString = input("Enter your classes, seperated by commas (whitespace will be stripped)\n")
