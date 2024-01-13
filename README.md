@@ -7,6 +7,6 @@ The script generates a semester folder, class subfolders, and assignments, notes
 
 ## Instructions
 Place the folderGenerator.py file into whichever directory you want your semester folder, and run it.  
-Typical exection looks like this
+Typical execution looks like this
 
 ![image](https://github.com/Muhammad-Sawaiz-Karim/py-folder-generator/assets/146144572/f9b62763-a90f-4244-960b-97d3e4f8dabf)
