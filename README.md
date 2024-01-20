@@ -1,6 +1,7 @@
 ## A Python script to automate making folders and subfolders for classes
 I was getting very annoyed with having to create the folders manually, so I just wrote down a script to do it for me.
 The script generates a semester folder, class subfolders, and assignments, notes, and slides subfolders within those class subfolders.
+Note that this script is still WIP
 
 ![image](https://github.com/Muhammad-Sawaiz-Karim/py-folder-generator/assets/146144572/7ffecd9e-27d7-4127-8b23-d2a76329d089)
 
