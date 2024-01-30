@@ -1,5 +1,18 @@
 import os
 
+def getPath():
+    while True:
+        directoryInput = input("Enter the path of the folder where you want to create the folder.\nType 'n' to create the folder here.\n")
+
+        if (os.path.exists(directoryInput)):
+            os.chdir(directoryInput)
+            break
+        elif (directoryInput == "n"):
+            print(os.getcwd())
+            break
+        else:
+            print("Path does not exist, please try again")
+
 def getSemester():
     semesterInput = input("Please enter the semester (whitespace will be stripped)\n")
     return semesterInput.replace(" ", "") #didn't use .strip() because it only removed first and last whitespace
@@ -16,6 +29,7 @@ def createSubfolders():
 
 def createSemesterAndClass(semesterName, subjectList):
     #creates semester folder and sets working directory to it
+
     os.mkdir(semesterName)
     os.chdir(semesterName)
     semesterPath = os.getcwd() #used to go back to semester folder after creating one class folder
@@ -25,3 +39,4 @@ def createSemesterAndClass(semesterName, subjectList):
         os.chdir(i)
         createSubfolders()
         os.chdir(semesterPath)
+        
